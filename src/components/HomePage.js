@@ -6,13 +6,16 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Shop from "./Shop";
 const HomePage = () => {
   return (
     <div className="home">
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
-          {/* <Route path="/" element={}></Route> */}
+          <Route path="/" element={<Shop />}>
+            
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
