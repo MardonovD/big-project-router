@@ -15,7 +15,7 @@ const Header = () => {
         <div className="header-right">
           <ul className="header-right-items d-flex gap-5">
             <li>
-              <Link to="home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="shop">Shop</Link>
