@@ -24,6 +24,10 @@ const Shop = () => {
     };
     axiosProducts(dis);
   }, []);
+
+  // const savatcha=()=>{
+
+  // }
   return (
     <div className="shop mt-3">
       <div className="container d-flex flex-wrap  justify-content-between gap-3">
@@ -39,7 +43,13 @@ const Shop = () => {
               <div className="card-body text-center">
                 <h3 className="card-title">{item.category}</h3>
                 <p className="card-text">{item.title}</p>
-                <a href="#" className="btn btn-primary">
+                <a
+                  href="#"
+                  onClick={() => {
+                    savatcha();
+                  }}
+                  className="btn btn-primary"
+                >
                   Add Savatcha
                 </a>
               </div>
