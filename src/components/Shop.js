@@ -25,17 +25,22 @@ const Shop = () => {
     axiosProducts(dis);
   }, []);
   return (
-    <div className="shop">
-      <div className="container">
+    <div className="shop mt-3">
+      <div className="container d-flex flex-wrap  justify-content-between gap-3">
         {state?.map((item, idex) => {
           return (
             <div className="card" key={idex + 1} style={{ width: "18rem" }}>
-              <img src={item.image} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{item.category}</h5>
+              <img
+                style={{ width: "286px", height: "400px" }}
+                src={item.image}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body text-center">
+                <h3 className="card-title">{item.category}</h3>
                 <p className="card-text">{item.title}</p>
                 <a href="#" className="btn btn-primary">
-                Add Savatcha
+                  Add Savatcha
                 </a>
               </div>
             </div>
