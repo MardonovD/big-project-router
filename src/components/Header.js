@@ -29,7 +29,10 @@ const Header = () => {
               <Link to="contact">Contact</Link>
             </li>
             <li>
-              <Link to="telegram">Telegram</Link>
+              <Link to="portfolio">Prortfolio</Link>
+            </li>
+            <li>
+              <Link to="portfolio/card">card</Link>
             </li>
             <div className="savatcha d-flex ">
               <svg

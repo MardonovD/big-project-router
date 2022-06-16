@@ -1,4 +1,5 @@
 //https://fakestoreapi.com/products
+
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -25,9 +26,9 @@ const Shop = () => {
     axiosProducts(dis);
   }, []);
 
-  const savatcha=()=>{
-
-  }
+  const savatcha = () => {
+    console.log(12);
+  };
   return (
     <div className="shop mt-3">
       <div className="container d-flex flex-wrap  justify-content-between gap-3">
