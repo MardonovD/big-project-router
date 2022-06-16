@@ -1,9 +1,12 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { savatAction } from "../redux/actions/productsAction";
 const Header = () => {
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    dispatch(savatAction());
+  }, []);
   return (
     <div className="header   ">
       <div className="container d-flex justify-content-between align-items-center">

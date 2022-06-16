@@ -13,9 +13,7 @@ const HomePage = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Shop />}>
-            
-          </Route>
+          <Route path="/" element={<Shop />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -4,3 +4,8 @@ export const productAction = (data) => {
     payload: data,
   };
 };
+export const savatAction = (data) => {
+  return {
+    type: "NUMBER",
+  };
+};
